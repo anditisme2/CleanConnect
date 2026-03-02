@@ -1,0 +1,101 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    padding: none;
+    margin: none;
+}
+header {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    gap: 8px;
+}
+.sidebar{
+    background-color: #025a02dd;
+    font-size: 20px ;
+    color:rgba(191, 240, 191, 0.733);
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.sidebar hr{
+    color: rgba(191, 240, 191, 0.733);
+    width: 100%;
+}
+.sidebar a{
+    color: rgba(191, 240, 191, 0.733);
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    padding: 12px 15px ;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.main header{
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+}
+.guidelines-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    flex: 1;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #f4f4f4;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.wet {
+    background-color: #e6f4ea; 
+    color: #002300bb;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.dry {
+    background-color: #e8f0fe;
+    color: #033282;
+    padding: 10px;
+    margin-right: 30px;
+}
+.tip-box {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.tab {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.tab.active {
+    background-color: #1e8e3e;
+    color: white;
+}
+
+.tab:hover {
+    opacity: 0.9;
+}
