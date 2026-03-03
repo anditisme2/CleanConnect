@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Clean Connect Guidelines Page</title>
+        <title>Clean Connect AI Detection</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <meta name="author" content="Clean Connect Team">
     </head>
     <body>
+
         <div class="container">
             <div class="sidebar">
                 <h3>
@@ -120,41 +121,31 @@ CleanConnect</h3>
                         Log Out</a>
             </div>
             <div class="main">
-                <header>Clean Connect</header>
-                <hr class="imp">
-                <div class="tabs">
-                    <article class="active"><a href="guide.html">Segregation Guidelines</a></article>
-                    <article class="tab"><a href="ai-detect.html">AI Waste Detector</a></article>
-                </div>
-                <section class="guidelines-wrapper">
-                    <article class="card wet">
-                        <h2>🌿 Wet Waste (Biodegradable)</h2>
-                        <ul>
-                            <li>Fruit & Vegetable Peels</li>
-                            <li>Leftover Food</li>
-                            <li>Egg Shells</li>
-                            <li>Flowers</li>
-                            <li>Garden Waste</li>
-                        </ul>
-                        <article class="tip-box">
-                            <p><span class="bold-text">Tip:</span> Use this for composting at home or community compost pits.</p>
-                        </article>
-                    </article>
-                    <article class="card dry">
-                        <h2>🥤 Dry Waste (Recyclable)</h2>
-                        <ul>
-                            <li>Plastic Bottles</li>
-                            <li>Paper & Cardboard</li>
-                            <li>Glass Bottles</li>
-                            <li>Metal Cans</li>
-                            <li>Rubber & Thermocol</li>
-                        </ul>
-                        <article class="tip-box">
-                            <p><span class="bold-text">Tip:</span> Rinse containers before disposing. Keep separate from wet waste.</p>
-                        </article>
-                    </article>
-
-                </section>
+                    <header>Clean Connect</header>
+                    <hr class="imp">
+                    <div class="tabs">
+                    <article class="tab"><a href="guide.html">Segregation Guidelines</a></article>
+                    <article class="active"><a href="ai-detect.html">AI Waste Detector</a></article>
+                    </div>
+                    <form class="segregate">
+                        <h3>AI Waste Classifier</h3>
+                        <p>Upload a photo to detect if it's Dry or Wet waste.</p>
+                            <div class="upload-box">
+                                <input type="file" id="photo" accept="image/*">
+                                <svg xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" 
+                                viewBox="0 0 24 24" 
+                                stroke-width="1.5" 
+                                stroke="currentColor" 
+                                height="40px"
+                                width="40px">
+                                <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5" />
+                                </svg><br>
+                                <p>Click to upload or drag an image</p>
+                            </div>
+                    </form>
             </div>
         </div>
     </body>
